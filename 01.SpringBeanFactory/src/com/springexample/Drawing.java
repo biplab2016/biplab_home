@@ -17,6 +17,10 @@ public class Drawing {
 		//Triangle triangle = (Triangle)ref;
 		ref.draw();
         System.out.println("Changing");
+
         System.out.println("Changing2");
+
+        System.out.println("Changed by Swarup");
+
 	}
 }
