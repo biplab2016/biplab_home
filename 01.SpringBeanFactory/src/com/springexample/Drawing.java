@@ -16,6 +16,6 @@ public class Drawing {
 		Triangle ref = (Triangle)factory.getBean("triangle");
 		//Triangle triangle = (Triangle)ref;
 		ref.draw();
-
+        System.out.println("Changing");
 	}
 }
