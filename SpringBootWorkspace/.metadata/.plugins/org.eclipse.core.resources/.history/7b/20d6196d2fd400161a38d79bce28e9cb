@@ -1,0 +1,19 @@
+package com.cts.controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+
+@Controller
+@RequestMapping("/application")
+public class ApplicationController {
+	@RequestMapping(value="/hello", method=RequestMethod.GET,headers={"Content-Type=application/json"})
+	public @ResponseBody ResponseEntity<String> returnResponse(){
+		return new ResponseEntity<String>("request received",HttpStatus.OK);
+	}
+
+}

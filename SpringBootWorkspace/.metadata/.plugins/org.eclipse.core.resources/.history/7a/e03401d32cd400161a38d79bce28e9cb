@@ -1,0 +1,21 @@
+package com.cts.application;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+@SpringBootApplication
+@ComponentScan("com.cts.controller")
+public class Application implements CommandLineRunner {
+
+	public void run(String... arg0) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+		System.out.println("Application Started");
+	}
+}
