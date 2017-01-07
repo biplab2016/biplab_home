@@ -16,6 +16,12 @@ public class Drawing {
 		Triangle ref = (Triangle)factory.getBean("triangle");
 		//Triangle triangle = (Triangle)ref;
 		ref.draw();
+        System.out.println("Changing");
 
+        System.out.println("Changing2");
+
+        System.out.println("Changed by Swarup");
+    	System.out.println("Changed by Swarup Saha");
+    	System.out.println("Again changing!!!!");
 	}
 }
